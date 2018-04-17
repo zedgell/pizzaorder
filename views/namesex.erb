@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="/css/pic.css">
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text]:hover {
+    background-color: #45a049;
+}
+
+input[type=radio]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+<h3><font color="blue">Zacharys Pizza</h3>
+<div>
+  <form method="post" action="namesex">
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+    <label for="sir name">sir name</label>
+    <select id="sirname" name="sirname">
+      <option value="Mr">Mr</option>
+      <option value="Mrs">Mrs</option>
+      <option value="Miss">Miss</option>
+    </select>
+
+    <label for="drink size">drink</label>
+    <select id="drink" name="drink">
+      <option value="large soda">large soda</option>
+      <option value="medium soda">medium soda</option>
+      <option value="small soda">small soda</option>
+      <option value="coffee">coffee</option>
+    </select>
+
+    <label for="pizza crust">pizza crust</label>
+    <br>
+    <input type="radio" name="pizzacrust" value="thin"> thin    <input type="radio" name="pizzacrust" value="rising"> rising
+    <br>
+
+    <label for="toppings1">do you want cheese on you pizza</label>
+    <br>
+    <input type="radio" id="cheese" name="toppings1" value="cheese"> yes    <input type="radio" name="toppings1" value=""> no
+    <br>
+
+    <label for="toppings2">do you want peporoni on your pizza</label>
+    <br>
+    <input type="radio" id="peporoni" name="toppings2" value="peporoni"> yes   <input type="radio" name="toppings2" value=""> no
+    <br> 
+
+    <label for="toppings3">do you want sausage on you pizza</label>
+    <br>
+    <input type="radio" id="sausage" name="toppings3" value="sausage"> yes    <input type="radio" name="toppings3" value=""> no
+    <br>
+
+    <label for="toppings4">dp you want fruit on you pizza</label>
+    <br>
+    <input type="radio" id="fruit" name="toppings4" value="fruit"> yes   <input type="radio" name="toppings4" value=""> no
+    <br>
+
+    <input type="submit">
+  </form>
+</div>
+
+</body>
+</html>
